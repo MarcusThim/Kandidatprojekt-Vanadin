@@ -1,107 +1,23 @@
 %\usepackage[top=0.5cm,bottom=0.5cm,left=0.5cm,right=0.5cm]{geometry}
 %\usepackage[a5paper,top=0cm,bottom=0cm,left=0cm,right=0cm]{geometry}
 \documentclass{article}
-\usepackage{listings}
-\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
-\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
-\definecolor{mylilas}{RGB}{170,55,241}
-
-\usepackage[swedish,english]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{hyperref}
-\usepackage{caption}
-\usepackage{lipsum}
-\usepackage{listings}
-\usepackage{listingsutf8}
-\usepackage{xcolor}
-\usepackage{textcomp}
-\usepackage{units}
-\usepackage{bbm}
-\usepackage{url}
-\usepackage[english]{isodate}
-\usepackage{gensymb}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage{fullpage}
-\usepackage{tikz}
-\usepackage{pgfplots} 
-\usepackage{pgfgantt}
-\usepackage{pdflscape}
-\pgfplotsset{compat=newest} 
-\pgfplotsset{plot coordinates/math parser=false}
-\usepackage{todonotes}
-\usepackage{siunitx}
-\usepackage{geometry}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[english,swedish]{babel}
-\usepackage{amsmath}
-\usepackage{ae} 
-\usepackage{units}
-\usepackage{mhchem}
-\usepackage{icomma}
-\usepackage{color}
-\usepackage{graphicx}
-\usepackage{bbm}
-\usepackage{textcomp}
-\usepackage{hyperref}
-\usepackage{verbatim}
-\usepackage{wrapfig}
-%\usepackage{natbib}
-\usepackage{multirow}
-\usepackage{subfig}
-\usepackage[titletoc]{appendix}
-\usepackage{float}
-\usepackage{parskip}
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-
-
-
-
-
-
+\input{paket.tex} % här ligger även bra hemsidor som man kan använda
+\addbibresource{referenser.bib}
+\bibliography{referenser}
 \begin{document}
-
-\begin{titlepage}
-\begin{centering}
-
-{\huge\bfseries \par}
-\vspace{1cm}
-{\scshape\Large \textbf{}\par}
-{\scshape\Large \par}
-{\Large\itshape Victor  \\ \par}
-{\large \today\par}
-
-{   \par}
-{   \par}
-{    \par}
-
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[scale=0.3]{chalmers.png}
-\label{fig:chalmers}
-
-\end{figure}
-\centering{\textbf{CHALMERS TEKNISKA HÖGSKOLA} \par}
-
-
-\end{centering}
-\end{titlepage}
+\input{title.tex}
 \newpage
-\thispagestyle{empty}
-\tableofcontents
-\thispagestyle{empty}
-\newpage
-\begin{abstract}
-\end{abstract}
-\section{test}
-hgfhf
-methlab
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{7pt}
+\pagenumbering{arabic}
+\input{Bakgrund.tex}
+\input{metod.tex}
+\input{resultat.tex}
+\input{diskussion}
+\input{slutsats}
 
+
+
+
+\printbibliography 
+\appendix
 \end{document}
+
