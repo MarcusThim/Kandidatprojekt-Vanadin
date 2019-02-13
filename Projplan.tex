@@ -5,7 +5,7 @@
 \usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
 \definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
 \definecolor{mylilas}{RGB}{170,55,241}
-\usepackage[swedish,english]{babel}
+\usepackage[swedish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -20,7 +20,7 @@
 \usepackage{units}
 \usepackage{bbm}
 \usepackage{url}
-\usepackage[english]{isodate}
+\usepackage[swedish]{isodate}
 \usepackage{gensymb}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -36,7 +36,7 @@
 \usepackage{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[english,swedish]{babel}
+\usepackage[swedish]{babel}
 \usepackage{csquotes}
 \usepackage{amsmath}
 \usepackage{ae} 
@@ -79,21 +79,21 @@ citestyle=numeric
 \vspace{1cm}
 {\scshape\Large Projektsplanering \\ \textbf{KBTX-10-19-06}\par}
 {\scshape\Large \par}
-{\Large\itshape Victor Hernvall, Frida Tropp,  \\ Timmie Dzafo Paulsson, Marcus Mellqvist \\ Stefan Ewaldsson, och Marcus Thim.\par}
+{\Large\itshape Timmie Dzafo Paulsson, Stefan Ewaldsson, \\ Victor Hernvall, Marcus Mellqvist \\ , Marcus Thim, Frida Tropp, .\par}
 {\large \today\par}
-
+%Ordna i ordning
 {   \par}
 {   \par}
 {    \par}
 
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[scale=0.3]{chalmers.png}
-\label{fig:chalmers}
+%\begin{figure}[!ht]
+%\centering
+%\includegraphics[scale=0.3]{chalmers.png}
+%\label{fig:chalmers}
 
-\end{figure}
-\centering{\textbf{CHALMERS TEKNISKA HÖGSKOLA} \par}
+%\end{figure}
+%\centering{\textbf{CHALMERS TEKNISKA HÖGSKOLA} \par}
 
 
 \end{centering}
@@ -111,11 +111,25 @@ citestyle=numeric
 \newpage
 \pagenumbering{arabic}
 
+
+%bakgrund 
+% Börja med stålindustrin, masugn etc
+% Teori LD-slagg
+% Vanadin
+
+% Förbränning
+% Fluideserad bädd
+% Syrebärare  
+% Biomassa
+
+% Hur de två länkar samman. 
+
+
+
 \section{Bakgrund}
 Vanadin, grundämne nummer 23, är en övergångsmetall i det periodiska systemets femte grupp. Vanadin hittas i en handfull olika tillämpningsområden som exempelvis katalysator i en rad olika tillverkningsprocesser\cite{Pecoraro2014}.
-Vanadin har oxidationstillstånd, +2,+3,+4 och +5, [Kirk-Othmer: Vanadium and Vanadium Alloys] \cite{Baroch2013} vilket har gjort att metallen varit av särskilt intresse i flödesbatterier och därför föremål för studier ända sedan förra århundradet\cite{Skyllas-Kazacos1987}.
-Fördelen med de många oxidationstillstånden är att elektrolyterna i batteriets halvceller kan bestå av samma metall vilket är fördelaktigt med avseende på kontaminering av membran, elektrod och elektrolyter\cite{Lopez-Vizcaino2017}. 
-Vanadin nyttjas dock i dagsläget mest som ett additiv i ståltillverkning vars syfte är att stärka stålet\cite{Baroch2013}.
+Metallen har oxidationstillstånd, +2,+3,+4 och +5,  \cite{Baroch2013} vilket har gjort att metallen varit av särskilt intresse i flödesbatterier och därför föremål för studier ända sedan förra århundradet\cite{Skyllas-Kazacos1987}.
+Fördelen med de många oxidationstillstånden är att elektrolyterna i batteriets halvceller kan bestå av samma metall vilket är fördelaktigt med avseende på kontaminering av membran, elektrod och elektrolyter\cite{Lopez-Vizcaino2017}. Vanadin nyttjas dock i dagsläget mest som ett additiv i ståltillverkning vars syfte är att stärka stålet\cite{Baroch2013}.
 
 I dagens samhälle ökar behovet av förnybar energi i form av exempelvis solkraft för att ersätta fossila alternativ. Detta yttrade sig tydligt i Sverige 2018 då intresset för solkraft ökade som ett svar på regeringens beslut om utökat investeringkostnadsstöd från 20 till 30 procent i solcellsinstallationer från och med den första januari 2018\cite{SverigesEnergimybn2009}.
 
@@ -123,21 +137,23 @@ Problemet som kvarstår är dock att förnyelsebara energikällor i allmänhet o
 
 
 Vanadin lades i januari 2018 i EU:s lista över kritiska material under direktivet om en cirkulär ekonomi\cite{Navigation2018}. 
-Som en följd av detta har företag som exempelvis Scandivanadium och EU Energy Corporation via Bergsstaten ansökt om undersökningstillstånd att utvinna just vanadin ur svenska mineralfyndigheter på Österlen i Skåne respektive utkanten av Östersund i Jämtland. Dessa beslut möts ej sällan av kontrovers där missnöje yttras genom protester från bofasta individer i områdena. \cite{NohrstedtLinda2018GruvforetagBatterier}. 
+Som en följd av detta har företag som exempelvis Scandivanadium och EU Energy Corporation via Bergsstaten ansökt om undersökningstillstånd att utvinna just vanadin ur svenska mineralfyndigheter på Österlen i Skåne respektive utkanten av Östersund i Jämtland. Dessa beslut möts ej sällan av kontrovers där missnöje yttras genom protester från bofasta individer i områdena. \cite{NohrstedtLinda2018}. 
 För att tackla problemet med att försöka uppnå en cirkulär ekonomi kan det därför finnas ett intresse i att utvinna vanadin på annan väg, nämligen deponerat LD-slagg istället för att bryta helt ny mineral.
 
 \subsection{Stålslagg}
 Vid framställning av stål bildas diverse restprodukter som exempelvis gasreningsstoft, gasreningsslam och just slagg. Gasreningsstoft är de små partiklar som följer med de gaser som bildas i ståltillverkningens varma processer. Dessa avskiljs i hög utsträckning tillsammans med rökgaser i diverse filtreringsanordningar. Stoften kategoriseras som torra eller våta och efter rening  bildar de gasreningsstoft respektive gasreningsslam. [Jernkontoret - Gasreningsstoft och -slam blir nya råvaror][Jernkontoret handbok] 
 
-Stålslagg förekommer i en rad olika typer som t.ex. ljusbågsugnsslagg och LD-slagg\cite{Pehlke2014a}. 
-Slaggen kategoriseras utifrån vilken typ av ugn som använts vid framställning av råjärnet. Ljusbågsugnsslagg är restprodukt av skrotbaserad ståltillverkning medan LD-slagg är restprodukt i malmbaserad ståltillverkning\cite{Pehlke2014a}.
-Ur just slagg är det ej ovanligt att stålverken internt återvinner järn och diverse legeringsmetaller ur restprodukten som en del av sin process.  Svenskt ståls branschorganisation Jernkontoret hävdar trots detta att 20\% av avfallet, där spår av vanadin kan hittas, hamnar på deponi hos antingen kommunal deponeringsplats eller en extern aktör\cite{PontusWestrin}. Det tål också att nämnas att det finns tillgängligt flera ton av gammalt deponerat slagg till förfogande som syrebärare följt av lakmaterial.
+Stålslagg förekommer i en rad olika typer som t.ex. ljusbågsugnsslagg och LD-slagg\cite{Pehlke2014a}. %Nämn vad LD står för och varför! 
+Slaggen kategoriseras utifrån vilken typ av ugn som använts vid framställning av råjärnet. Ljusbågsugnsslagg är restprodukt av skrotbaserad ståltillverkning medan LD-slagg är restprodukt i malmbaserad ståltillverkning\cite{Pehlke2014a}. Slagg kan brukas i diverse tillämpningar som exempelvis konstruktionsmaterial eller asfalt; detta för att minska uttaget av jungfruliga resurser. Dessutom använder Stålverken begagnat material som skrot för tillverkning av nya produkter; detta för att nyttja resurserna till sitt yttersta. [https://www.jernkontoret.se/sv/stalindustrin/tillverkning-anvandning-atervinning/restprodukter/slagg/][https://www.jernkontoret.se/sv/stalindustrin/tillverkning-anvandning-atervinning/atervinning-av-jarn-och-stal/] 
+
+Svenskt ståls branschorganisation Jernkontoret hävdar trots detta att 20\% av avfallet, där spår av vanadin kan hittas, hamnar på deponi hos antingen kommunal deponeringsplats eller en extern aktör\cite{PontusWestrin}. Det tål också att nämnas att det finns tillgängligt flera ton av gammalt deponerat slagg till förfogande som syrebärare följt av lakmaterial. %Notera att man här inte vet vad varken en syrebärare eller ett lakmaterial är. Kanske ta bort meningen alternativt flytta ner den?
 
 %[https://www.jernkontoret.se/sv/stalindustrin/tillverkning-anvandning-atervinning/restprodukter/]
 %Båda dessa citerade 04-02-2019 
 
 \subsection{Som syrebärare i förbränningsprocesser}
-Det har visat sig att LD-slagg har potential som en billig syrebärare i kemcyklisk förbränning (CLC), där två stycken fluidiserande bäddreaktorer nyttjas för att separera CO$_2$ vid förbränning \cite{Xu2017}.
+Det har visat sig att LD-slagg har potential som en billig syrebärare i kemcyklisk förbränning (CLC), där två stycken fluidiserande bäddreaktorer nyttjas för att separera CO$_2$ vid förbränning \cite{Xu2017}. Detta illustreras enligt Figur 1 %INFOGA! 
+nedan. Syrebäraren, som i detta fallet är LD-slagg, oxideras i ena reaktorn genom tillförsel av syre. Denna förflyttas sedan till den andra reaktorn där bränslet reducerar LD-slagget, för tillbakaförsel till första reaktorn.  %Har freestylat detta. Glöm inte att jämföra med källa för att se så det stämmer!
  
 Syrebärare kan även nyttjas i Oxygen Carrier Aided Combustion (OCAC), d.v.s. förbränning i en fluidiserad bädd där bäddmaterialet består av just en syrebärande metall.
 Syftet är att transportera syre till bränslet i understökiometriska områden för att på så vis öka pannans effektivitet\cite{Zevenhoven2018}.
@@ -171,9 +187,9 @@ Valet av metod grundar sig i tidigare uppställningar för liknande laborationer
 \caption{Premilinär test uppställning.}
 \begin{tabular}{|l|c|c|c|}
 \hline
-\textbf{\begin{tabular}[c]{@{}l@{}}Parametrar\end{tabular}}              & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}H$_{2}$SO$_{4}$ \\ koncentration [M]\end{tabular}}} & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Ratio mellan fast \\ och flytande [ml/g]\end{tabular}}} & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Laknings\\ Temperatur  [$\degree$C]\end{tabular}}} \\ \hline
+\textbf{\begin{tabular}[c]{@{}l@{}}Parametrar\end{tabular}}              & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}H$_{2}$SO$_{4}$ \\ koncentration [M]\end{tabular}}} & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Ratio mellan flytande \\ fast och  [ml/g]\end{tabular}}} & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Laknings\\ Temperatur  [$\degree$C]\end{tabular}}} \\ \hline
 \textbf{\begin{tabular}[c]{@{}l@{}}H$_{2}$SO$_{4}$ \\ koncentration [M]\end{tabular}}    & 3,4,5                                                                                                    & 25:1                                                                                                           & 70                                                                                                        \\ \hline
-\textbf{\begin{tabular}[c]{@{}l@{}}Ratio mellan fast\\ och flytande [ml/g]\end{tabular}} & 3                                                                                                          & 25:1, 30:1, 40:1                                                                                            & 70                                                                                                        \\ \hline
+\textbf{\begin{tabular}[c]{@{}l@{}}Ratio mellan flytande\\ och fast [ml/g]\end{tabular}} & 3                                                                                                          & 25:1, 30:1, 40:1                                                                                            & 70                                                                                                        \\ \hline
 \textbf{\begin{tabular}[c]{@{}l@{}}Laknings \\ Temperatur  [$\degree$C]\end{tabular}}    & 3                                                                                                          & 25:1                                                                                                           & 50, 60, 70, 80                                                                                               \\ \hline
 \end{tabular}
 \label{tab:metodtab}
