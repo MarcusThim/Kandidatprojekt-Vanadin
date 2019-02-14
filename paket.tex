@@ -1,3 +1,6 @@
+%\usepackage[top=0.5cm,bottom=0.5cm,left=0.5cm,right=0.5cm]{geometry}
+%\usepackage[a5paper,top=0cm,bottom=0cm,left=0cm,right=0cm]{geometry}
+\documentclass{article}
 \usepackage{listings}
 \usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
 \definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
@@ -7,7 +10,6 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage{subfiles}
 \usepackage{hyperref}
 \usepackage{caption}
 \usepackage{lipsum}
@@ -35,6 +37,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[swedish]{babel}
+\usepackage{csquotes}
 \usepackage{amsmath}
 \usepackage{ae} 
 \usepackage{units}
@@ -53,9 +56,19 @@
 \usepackage[titletoc]{appendix}
 \usepackage{float}
 \usepackage{parskip}
+\usepackage{subfiles}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \usepackage{chemfig} %https://en.wikibooks.org/wiki/LaTeX/Chemical_Graphics
-\usepackage[backend=biber,style=ieee]{biblatex}
+\usepackage[
+backend=biber,
+style=ieee,
+citestyle=numeric 
+]{biblatex}
+%https://www.tablesgenerator.com/
+%https://www.codecogs.com/latex/eqneditor.php
+\hbadness=10000
+%\addbibresource{timmie.bib}
+ % här ligger även bra hemsidor som man kan använda
 %https://www.tablesgenerator.com/
 %https://www.codecogs.com/latex/eqneditor.php
 % om man behöver få in vissa saker som SO4 men vill ha det underline så kan man gå in i "mathmode" genom att ha $"mattegrej$ typ $_{4}$ för att göra fyran nedsänkt
